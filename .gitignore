@@ -1,0 +1,10 @@
+.godot/
+*.import~
+export/
+# referências de terceiros (frames/vídeos de desenhos animados): não publicar
+referencias/video/
+referencias/imagens/
+referencias/quadros/
+# saídas intermediárias da arte
+art_src/out/
+__pycache__/

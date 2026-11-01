@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+  <title>Untitled-1</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="sombra_chao" d="M188 742 C188 734.82 240.829 729 306 729 C371.171 729 424 734.82 424 742 C424 749.18 371.171 755 306 755 C240.829 755 188 749.18 188 742 Z" fill="#0a0f18" opacity="0.24"/>
+    <path id="perna_ol" d="M279 470 C275 540 283 620 279 694" fill="none" stroke="#0a0f18" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="perna" d="M279 470 C275 540 283 620 279 694" fill="none" stroke="#272c3c" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_perna" d="M288 480 C285 545 292 620 287 690" fill="none" stroke="#1b2030" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="perna_ol-2" data-name="perna_ol" d="M335 470 C340 540 330 620 335 694" fill="none" stroke="#0a0f18" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="perna-2" data-name="perna" d="M335 470 C340 540 330 620 335 694" fill="none" stroke="#272c3c" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_perna-2" data-name="sombra_perna" d="M344 480 C350 545 339 620 343 690" fill="none" stroke="#1b2030" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="meia" d="M265 684 L293 684 L292 700 L266 700 Z" fill="#f4f1e8"/>
+    <path id="meia_ol" d="M265 684 L293 684 L292 700 L266 700 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="tenis" d="M263 700 L291 700 C319 704 323 730 301 736 L259 736 C245 734 245 704 263 700 Z" fill="#171a24"/>
+    <path id="tenis_ol" d="M263 700 L291 700 C319 704 323 730 301 736 L259 736 C245 734 245 704 263 700 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sola" d="M257 727 L309 727" fill="none" stroke="#f4f1e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="meia-2" data-name="meia" d="M321 684 L349 684 L348 700 L322 700 Z" fill="#f4f1e8"/>
+    <path id="meia_ol-2" data-name="meia_ol" d="M321 684 L349 684 L348 700 L322 700 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="tenis-2" data-name="tenis" d="M319 700 L347 700 C375 704 379 730 357 736 L315 736 C301 734 301 704 319 700 Z" fill="#171a24"/>
+    <path id="tenis_ol-2" data-name="tenis_ol" d="M319 700 L347 700 C375 704 379 730 357 736 L315 736 C301 734 301 704 319 700 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sola-2" data-name="sola" d="M313 727 L365 727" fill="none" stroke="#f4f1e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="antebraco_ol" d="M218 402 C224 430 240 456 262 474" fill="none" stroke="#0a0f18" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="antebraco" d="M218 402 C224 430 240 456 262 474" fill="none" stroke="#cf9468" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="manga_ol" d="M252 326 C232 350 222 380 218 402" fill="none" stroke="#0a0f18" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="manga" d="M252 326 C232 350 222 380 218 402" fill="none" stroke="#38415a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="dobra_manga_ol" d="M219 392 L218 404" fill="none" stroke="#0a0f18" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="dobra_manga" d="M219 392 L218 404" fill="none" stroke="#56617d" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="antebraco_ol-2" data-name="antebraco_ol" d="M394 402 C388 430 372 456 350 474" fill="none" stroke="#0a0f18" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="antebraco-2" data-name="antebraco" d="M394 402 C388 430 372 456 350 474" fill="none" stroke="#cf9468" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="manga_ol-2" data-name="manga_ol" d="M360 326 C380 350 390 380 394 402" fill="none" stroke="#0a0f18" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="manga-2" data-name="manga" d="M360 326 C380 350 390 380 394 402" fill="none" stroke="#38415a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="dobra_manga_ol-2" data-name="dobra_manga_ol" d="M393 392 L394 404" fill="none" stroke="#0a0f18" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="dobra_manga-2" data-name="dobra_manga" d="M393 392 L394 404" fill="none" stroke="#56617d" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="calca" d="M244 436 C270 446 342 446 368 436 L372 494 C340 504 272 504 240 494 Z" fill="#272c3c"/>
+    <path id="calca_ol" d="M244 436 C270 446 342 446 368 436 L372 494 C340 504 272 504 240 494 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bolso" d="M252 462 L272 486" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bolso-2" data-name="bolso" d="M360 462 L340 486" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="camisa" d="M252 308 L360 308 C372 346 372 410 368 448 C336 458 276 458 244 448 C240 410 240 346 252 308 Z" fill="#38415a"/>
+    <path id="camisa_ol" d="M252 308 L360 308 C372 346 372 410 368 448 C336 458 276 458 244 448 C240 410 240 346 252 308 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_camisa" d="M360 308 C372 346 372 410 368 448 C356 452 346 454 336 455 C350 410 350 350 340 308 Z" fill="#2a3147"/>
+    <path id="luz_camisa" d="M252 314 C244 350 244 400 247 436 C252 400 252 350 262 316 Z" fill="#56617d" opacity="0.85"/>
+    <path id="camisa_ol-2" data-name="camisa_ol" d="M252 308 L360 308 C372 346 372 410 368 448 C336 458 276 458 244 448 C240 410 240 346 252 308 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="casa" d="M306 336 L306 450" fill="none" stroke="#0a0f18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="botao" d="M302 360 C302 357.791 303.791 356 306 356 C308.209 356 310 357.791 310 360 C310 362.209 308.209 364 306 364 C303.791 364 302 362.209 302 360 Z" fill="#cfd6e6"/>
+    <path id="botao-2" data-name="botao" d="M302 388 C302 385.791 303.791 384 306 384 C308.209 384 310 385.791 310 388 C310 390.209 308.209 392 306 392 C303.791 392 302 390.209 302 388 Z" fill="#cfd6e6"/>
+    <path id="botao-3" data-name="botao" d="M302 416 C302 413.791 303.791 412 306 412 C308.209 412 310 413.791 310 416 C310 418.209 308.209 420 306 420 C303.791 420 302 418.209 302 416 Z" fill="#cfd6e6"/>
+    <path id="botao-4" data-name="botao" d="M302 442 C302 439.791 303.791 438 306 438 C308.209 438 310 439.791 310 442 C310 444.209 308.209 446 306 446 C303.791 446 302 444.209 302 442 Z" fill="#cfd6e6"/>
+    <path id="pescoco" d="M290 296 L322 296 L322 322 L290 322 Z" fill="#b87d55"/>
+    <path id="gola" d="M292 300 L306 338 L276 330 L270 304 Z" fill="#56617d"/>
+    <path id="gola_ol" d="M292 300 L306 338 L276 330 L270 304 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="gola-2" data-name="gola" d="M320 300 L306 338 L336 330 L342 304 Z" fill="#56617d"/>
+    <path id="gola_ol-2" data-name="gola_ol" d="M320 300 L306 338 L336 330 L342 304 Z" fill="none" stroke="#0a0f18" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="v_pescoco" d="M296 302 L306 328 L316 302 Z" fill="#cf9468"/>
+    <path id="polegar" d="M250 462 C252 452 266 450 272 458 C274 464 270 470 262 470 C256 470 252 468 250 462 Z" fill="#cf9468"/>
+    <path id="polegar_ol" d="M250 462 C252 452 266 450 272 458 C274 464 270 470 262 470 C256 470 252 468 250 462 Z" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="polegar-2" data-name="polegar" d="M362 462 C360 452 346 450 340 458 C338 464 342 470 350 470 C356 470 360 468 362 462 Z" fill="#cf9468"/>
+    <path id="polegar_ol-2" data-name="polegar_ol" d="M362 462 C360 452 346 450 340 458 C338 464 342 470 350 470 C356 470 360 468 362 462 Z" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cabeca_ol" d="M226 156 C226 120 252 106 306 106 C360 106 386 120 386 156 L392 222 C392 264 360 294 306 296 C252 294 220 264 220 222 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabeca_ol-2" data-name="cabeca_ol" d="M201 222 C201 210.402 206.82 201 214 201 C221.18 201 227 210.402 227 222 C227 233.598 221.18 243 214 243 C206.82 243 201 233.598 201 222 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabeca_ol-3" data-name="cabeca_ol" d="M385 222 C385 210.402 390.82 201 398 201 C405.18 201 411 210.402 411 222 C411 233.598 405.18 243 398 243 C390.82 243 385 233.598 385 222 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabeca" d="M226 156 C226 120 252 106 306 106 C360 106 386 120 386 156 L392 222 C392 264 360 294 306 296 C252 294 220 264 220 222 Z" fill="#cf9468"/>
+    <path id="cabeca-2" data-name="cabeca" d="M201 222 C201 210.402 206.82 201 214 201 C221.18 201 227 210.402 227 222 C227 233.598 221.18 243 214 243 C206.82 243 201 233.598 201 222 Z" fill="#cf9468"/>
+    <path id="cabeca-3" data-name="cabeca" d="M385 222 C385 210.402 390.82 201 398 201 C405.18 201 411 210.402 411 222 C411 233.598 405.18 243 398 243 C390.82 243 385 233.598 385 222 Z" fill="#cf9468"/>
+    <path id="sombra_cabeca" d="M392 222 C392 264 360 294 306 296 C344 280 372 252 372 218 C372 190 368 164 360 142 C380 150 386 170 386 156 Z" fill="#b87d55"/>
+    <path id="orelha_s" d="M392 224 C392 217.925 394.686 213 398 213 C401.314 213 404 217.925 404 224 C404 230.075 401.314 235 398 235 C394.686 235 392 230.075 392 224 Z" fill="#b87d55"/>
+    <path id="cabelo_ol" d="M238 112 C238 98.745 248.745 88 262 88 C275.255 88 286 98.745 286 112 C286 125.255 275.255 136 262 136 C248.745 136 238 125.255 238 112 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo_ol-2" data-name="cabelo_ol" d="M269 100 C269 85.088 281.088 73 296 73 C310.912 73 323 85.088 323 100 C323 114.912 310.912 127 296 127 C281.088 127 269 114.912 269 100 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo_ol-3" data-name="cabelo_ol" d="M305 100 C305 85.088 317.088 73 332 73 C346.912 73 359 85.088 359 100 C359 114.912 346.912 127 332 127 C317.088 127 305 114.912 305 100 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo_ol-4" data-name="cabelo_ol" d="M342 112 C342 98.745 352.745 88 366 88 C379.255 88 390 98.745 390 112 C390 125.255 379.255 136 366 136 C352.745 136 342 125.255 342 112 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo_ol-5" data-name="cabelo_ol" d="M222 134 C222 124.059 230.059 116 240 116 C249.941 116 258 124.059 258 134 C258 143.941 249.941 152 240 152 C230.059 152 222 143.941 222 134 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo_ol-6" data-name="cabelo_ol" d="M368 134 C368 124.059 376.059 116 386 116 C395.941 116 404 124.059 404 134 C404 143.941 395.941 152 386 152 C376.059 152 368 143.941 368 134 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo_ol-7" data-name="cabelo_ol" d="M224 170 C218 136 236 116 262 112 L352 112 C380 116 396 136 388 170 C380 148 366 138 348 136 C322 150 290 150 266 136 C246 138 230 150 224 170 Z" fill="#0a0f18" stroke="#0a0f18" stroke-width="14" stroke-linejoin="round"/>
+    <path id="cabelo" d="M238 112 C238 98.745 248.745 88 262 88 C275.255 88 286 98.745 286 112 C286 125.255 275.255 136 262 136 C248.745 136 238 125.255 238 112 Z" fill="#1d191f"/>
+    <path id="cabelo-2" data-name="cabelo" d="M269 100 C269 85.088 281.088 73 296 73 C310.912 73 323 85.088 323 100 C323 114.912 310.912 127 296 127 C281.088 127 269 114.912 269 100 Z" fill="#1d191f"/>
+    <path id="cabelo-3" data-name="cabelo" d="M305 100 C305 85.088 317.088 73 332 73 C346.912 73 359 85.088 359 100 C359 114.912 346.912 127 332 127 C317.088 127 305 114.912 305 100 Z" fill="#1d191f"/>
+    <path id="cabelo-4" data-name="cabelo" d="M342 112 C342 98.745 352.745 88 366 88 C379.255 88 390 98.745 390 112 C390 125.255 379.255 136 366 136 C352.745 136 342 125.255 342 112 Z" fill="#1d191f"/>
+    <path id="cabelo-5" data-name="cabelo" d="M222 134 C222 124.059 230.059 116 240 116 C249.941 116 258 124.059 258 134 C258 143.941 249.941 152 240 152 C230.059 152 222 143.941 222 134 Z" fill="#1d191f"/>
+    <path id="cabelo-6" data-name="cabelo" d="M368 134 C368 124.059 376.059 116 386 116 C395.941 116 404 124.059 404 134 C404 143.941 395.941 152 386 152 C376.059 152 368 143.941 368 134 Z" fill="#1d191f"/>
+    <path id="cabelo-7" data-name="cabelo" d="M224 170 C218 136 236 116 262 112 L352 112 C380 116 396 136 388 170 C380 148 366 138 348 136 C322 150 290 150 266 136 C246 138 230 150 224 170 Z" fill="#1d191f"/>
+    <path id="degrade_e" d="M230 168 C224 150 232 136 244 128 C238 142 238 156 244 168 Z" fill="#3a3340" opacity="0.9"/>
+    <path id="degrade_d" d="M382 168 C388 150 380 136 368 128 C374 142 374 156 368 168 Z" fill="#3a3340" opacity="0.9"/>
+    <path id="brilho_cabelo" d="M258 106 C272 94 290 92 302 96 C286 100 272 106 266 116 Z" fill="#5a5066"/>
+    <path id="olho" d="M264 214 C264 210.686 266.686 208 270 208 C273.314 208 276 210.686 276 214 C276 217.314 273.314 220 270 220 C266.686 220 264 217.314 264 214 Z" fill="#0a0f18"/>
+    <path id="olho-2" data-name="olho" d="M336 214 C336 210.686 338.686 208 342 208 C345.314 208 348 210.686 348 214 C348 217.314 345.314 220 342 220 C338.686 220 336 217.314 336 214 Z" fill="#0a0f18"/>
+    <path id="sobrancelha" d="M252 194 C262 188 276 186 288 190" fill="none" stroke="#1d191f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sobrancelha-2" data-name="sobrancelha" d="M324 190 C336 186 350 188 360 194" fill="none" stroke="#1d191f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="nariz" d="M305 218 C312 228 312 234 303 236" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="boca" d="M262 244 C280 284 332 284 350 244 Z" fill="#6b2230"/>
+    <path id="dentes" d="M266 246 L346 246 L342 258 C326 266 286 266 270 258 Z" fill="#fbf8ef"/>
+    <path id="boca_ol" d="M262 244 C280 284 332 284 350 244 Z" fill="none" stroke="#0a0f18" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="covinha" d="M256 240 C252.667 245.333 253 250.333 257 255" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="covinha-2" data-name="covinha" d="M356 240 C359.333 245.333 359 250.333 355 255" fill="none" stroke="#0a0f18" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cavanhaque" d="M290 284 C296 296 316 296 322 284 C314 289 298 289 290 284 Z" fill="#1d191f"/>
+    <path id="cavanhaque_ol" d="M290 284 C296 296 316 296 322 284 C314 289 298 289 290 284 Z" fill="none" stroke="#0a0f18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="blush" d="M232 252 C232 248.134 237.372 245 244 245 C250.628 245 256 248.134 256 252 C256 255.866 250.628 259 244 259 C237.372 259 232 255.866 232 252 Z" fill="#e8806e" opacity="0.4"/>
+    <path id="blush-2" data-name="blush" d="M356 252 C356 248.134 361.372 245 368 245 C374.628 245 380 248.134 380 252 C380 255.866 374.628 259 368 259 C361.372 259 356 255.866 356 252 Z" fill="#e8806e" opacity="0.4"/>
+  </g>
+</svg>

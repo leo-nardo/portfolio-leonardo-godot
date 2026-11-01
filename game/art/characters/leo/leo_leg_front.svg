@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+  <title>Untitled-1</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="perna_ol" d="M330 522 C328 586 326 646 324 704" fill="none" stroke="#1c1417" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="perna" d="M330 522 C328 586 326 646 324 704" fill="none" stroke="#404c68" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_perna" d="M340 530 C342 590 340 650 338 700 C346 700 350 690 350 690 C350 640 352 580 348 524 Z" fill="#30394f" opacity="0"/>
+    <path id="meia_ol" d="M324 700 L324 716" fill="none" stroke="#1c1417" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="meia" d="M324 700 L324 716" fill="none" stroke="#fffbea" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="tenis" d="M292 704 L352 698 C362 712 378 718 396 726 C420 734 422 758 398 762 L300 762 C284 762 278 746 282 728 C284 716 288 708 292 704 Z" fill="#f7f3e8"/>
+    <path id="sola" d="M282 742 C324 750 376 750 414 740 C418 756 406 764 394 764 L300 764 C286 764 280 754 282 742 Z" fill="#d9d2bd"/>
+    <path id="listra" d="M296 726 C334 734 376 734 402 724" fill="none" stroke="#3b82c4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="contorno_tenis" d="M292 704 L352 698 C362 712 378 718 396 726 C420 734 422 758 398 762 L300 762 C284 762 278 746 282 728 C284 716 288 708 292 704 Z" fill="none" stroke="#1c1417" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M330 710 L336 722 M344 708 L350 720" fill="none" stroke="#1c1417" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

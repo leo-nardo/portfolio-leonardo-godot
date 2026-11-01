@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+  <title>cabeca_limpa</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="orelha" d="M262 262 C238 250 218 262 220 284 C222 308 244 318 266 306 Z" fill="#d4955f" stroke="#120d08" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="orelha_dentro" d="M232 276 C240 270 250 274 252 284 C254 292 248 298 242 300" fill="none" stroke="#120d08" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cabeca" d="M262 196 C300 176 400 150 500 144 C540 156 558 202 556 250 C554 290 536 322 498 342 C464 358 410 362 362 354 C318 346 280 322 266 292 C256 270 254 232 262 196 Z" fill="#d4955f" stroke="#120d08" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="costeleta" d="M264 200 C284 192 306 190 322 192 C316 214 306 236 296 262 C286 262 274 262 266 256 C258 236 258 216 264 200 Z" fill="#8a5b3c"/>
+    <path id="costeleta_linha" d="M322 194 C318 220 306 248 298 276" fill="none" stroke="#120d08" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_testa" d="M340 184 C400 172 470 164 524 160 C536 176 540 192 538 204 C480 186 400 188 340 198 Z" fill="#b97d4f"/>
+    <path id="capacete" d="M228 219 C222 190 220 160 228 136 C240 92 280 54 330 38 C372 26 430 24 470 44 C506 62 532 96 548 124 C556 126 562 128 560 132 C558 138 540 142 506 144 C470 156 420 168 370 176 C322 186 280 198 246 220 C238 224 230 224 228 219 Z" fill="#fbd62d" stroke="#120d08" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_casco" d="M236 214 C270 196 320 184 372 174 C420 166 470 154 506 142 C480 170 420 190 360 198 C316 206 270 214 244 224 Z" fill="#e3b81e"/>
+    <path id="nervura_1" d="M300 52 C336 44 372 60 393 94" fill="none" stroke="#120d08" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="nervura_2" d="M418 33 C432 42 442 60 445 84" fill="none" stroke="#120d08" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="aba_linha" d="M362 160 C410 148 456 136 492 126" fill="none" stroke="#120d08" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

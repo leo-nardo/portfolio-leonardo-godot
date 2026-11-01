@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1080" viewBox="0 0 2400 1080">
+  <!-- sapato gigante visto de lado, biqueira para a esquerda; sai da tela por cima -->
+  <path d="M70 1030 C20 1030 10 980 40 940 C120 780 420 640 700 560 L700 -40 L2320 -40 L2320 960 C2320 1010 2290 1040 2240 1040 L120 1040 C95 1040 80 1038 70 1030 Z" fill="#7b4f2d" stroke="#150e07" stroke-width="16" stroke-linejoin="round"/>
+  <!-- sombra chapada na parte de baixo do couro -->
+  <path d="M40 940 C120 780 420 640 700 560 L700 700 C440 760 180 880 60 990 Z" fill="#6a4226"/>
+  <path d="M700 560 L700 -40" stroke="#150e07" stroke-width="12" fill="none"/>
+  <!-- costura da biqueira -->
+  <path d="M150 905 C260 800 470 700 700 650" stroke="#150e07" stroke-width="8" fill="none" stroke-dasharray="26 18" stroke-linecap="round"/>
+  <!-- sola -->
+  <path d="M52 1012 L2312 1012 L2312 1000 C2312 1024 2290 1038 2240 1038 L120 1038 C85 1038 62 1032 52 1012 Z" fill="#e9dcc0" stroke="#150e07" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M90 1026 L2290 1026" stroke="#c9b894" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- costuras verticais do couro -->
+  <path d="M1500 -20 L1500 960" stroke="#150e07" stroke-width="8" fill="none" stroke-dasharray="26 18"/>
+  <path d="M1960 -20 L1960 960" stroke="#150e07" stroke-width="8" fill="none" stroke-dasharray="26 18"/>
+</svg>

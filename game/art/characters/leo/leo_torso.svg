@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+  <title>Untitled-1</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="pescoco" d="M284 292 L284 350 C296 358 318 358 330 350 L330 292 Z" fill="#e29a72"/>
+    <path d="M284 292 L284 350 C296 358 318 358 330 350 L330 292 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="blazer" d="M218 354 C262 338 350 338 394 354 C414 402 412 460 404 510 C352 526 260 526 208 510 C200 460 198 402 218 354 Z" fill="#5b86a8"/>
+    <path id="sombra_blazer" d="M394 354 C414 402 412 460 404 510 C384 516 362 520 346 521 C374 470 374 410 358 346 C372 346 384 349 394 354 Z" fill="#456a8a"/>
+    <path id="contorno_blazer" d="M218 354 C262 338 350 338 394 354 C414 402 412 460 404 510 C352 526 260 526 208 510 C200 460 198 402 218 354 Z" fill="none" stroke="#1c1417" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="camisa" d="M282 346 L306 436 L330 346 Z" fill="#fffbea"/>
+    <path d="M282 346 L306 436 L330 346 Z" fill="none" stroke="#1c1417" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="lapela" d="M270 348 L306 446 L250 414 L244 362 Z" fill="#456a8a"/>
+    <path d="M270 348 L306 446 L250 414 L244 362 Z" fill="none" stroke="#1c1417" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="lapela-2" data-name="lapela" d="M342 348 L306 446 L362 414 L368 362 Z" fill="#456a8a"/>
+    <path d="M342 348 L306 446 L362 414 L368 362 Z" fill="none" stroke="#1c1417" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="gravata" d="M306 358 L264 338 C254 354 254 372 264 386 Z" fill="#c0392f"/>
+    <path d="M306 358 L264 338 C254 354 254 372 264 386 Z" fill="none" stroke="#1c1417" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="gravata-2" data-name="gravata" d="M306 358 L348 338 C358 354 358 372 348 386 Z" fill="#c0392f"/>
+    <path d="M306 358 L348 338 C358 354 358 372 348 386 Z" fill="none" stroke="#1c1417" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="no_gravata" d="M294 348 C294 342 318 342 318 348 C320 366 292 366 294 348 Z" fill="#8f2822"/>
+    <path d="M294 348 C294 342 318 342 318 348 C320 366 292 366 294 348 Z" fill="none" stroke="#1c1417" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="botao" d="M299 476 C299 466 313 466 313 476 C313 486 299 486 299 476 Z" fill="#2f4a63"/>
+    <path d="M299 476 C299 466 313 466 313 476 C313 486 299 486 299 476 Z" fill="none" stroke="#1c1417" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cinto" d="M206 500 C258 512 354 512 406 500 L408 530 C354 542 258 542 204 530 Z" fill="#3b2c28"/>
+    <path d="M206 500 C258 512 354 512 406 500 L408 530 C354 542 258 542 204 530 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="fivela" d="M290 508 L322 508 L322 534 L290 534 Z" fill="#e8c04a"/>
+    <path d="M290 508 L322 508 L322 534 L290 534 Z" fill="none" stroke="#1c1417" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

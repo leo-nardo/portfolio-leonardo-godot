@@ -1,0 +1,94 @@
+{
+ "base": [
+  225,
+  41,
+  559,
+  357
+ ],
+ "capacete": [
+  221,
+  10,
+  561,
+  226
+ ],
+ "caixas": {
+  "olho_e": [
+   310,
+   160,
+   432,
+   286
+  ],
+  "olho_d": [
+   462,
+   140,
+   585,
+   286
+  ],
+  "nariz": [
+   418,
+   228,
+   522,
+   284
+  ],
+  "boca": [
+   392,
+   284,
+   530,
+   340
+  ]
+ },
+ "pecas": {
+  "olho_e": [
+   "fala",
+   "desconfiado",
+   "bocejo",
+   "surpreso",
+   "furioso",
+   "irritado",
+   "debochado",
+   "preocupado",
+   "animado",
+   "lendo",
+   "normal"
+  ],
+  "olho_d": [
+   "fala",
+   "desconfiado",
+   "bocejo",
+   "surpreso",
+   "furioso",
+   "irritado",
+   "debochado",
+   "preocupado",
+   "animado",
+   "lendo",
+   "normal"
+  ],
+  "nariz": [
+   "fala",
+   "desconfiado",
+   "bocejo",
+   "surpreso",
+   "furioso",
+   "irritado",
+   "debochado",
+   "preocupado",
+   "animado",
+   "lendo",
+   "normal"
+  ],
+  "boca": [
+   "fala",
+   "desconfiado",
+   "bocejo",
+   "surpreso",
+   "furioso",
+   "irritado",
+   "debochado",
+   "preocupado",
+   "animado",
+   "lendo",
+   "normal"
+  ]
+ }
+}

@@ -1,0 +1,234 @@
+class_name Player
+extends CharacterBody2D
+## Personagem. Corpo = quadros desenhados (pernas/tronco/cabeça); braços = peças giradas por código.
+##
+## Boas práticas de balanço de braço aplicadas aqui:
+##  - o braço oscila numa senoide (devagar nos extremos, rápido no meio) em vez de saltar de pose em pose;
+##  - a fase é ligada aos quadros da perna (não ao relógio), então braço e perna nunca perdem o passo;
+##  - braço da frente e de trás ficam em oposição (180° de diferença);
+##  - o antebraço atrasa em relação ao braço (follow-through) e dobra mais quando o braço vai para frente;
+##  - o ângulo segue o alvo com um pequeno atraso suave, e vira "pendurado" ao parar.
+## Ângulos em graus matemáticos: 0° = frente, 90° = cima, 270° = para baixo.
+
+const SPEED := 420.0
+const ACCELERATION := 2600.0
+const GRAVITY := 2400.0
+const RIG_SCALE := 0.46
+
+@export_group("Balanço dos braços")
+@export_range(200.0, 300.0) var arm_down_deg := 270.0        ## ponto mais baixo (pendurado)
+@export_range(-90.0, 120.0) var arm_up_deg := -30.0          ## ANDAR: ponto mais à frente do braço 2 (graus acima da horizontal; negativo = abaixo dela)
+@export_range(-90.0, 120.0) var back_arm_up_deg := -40.0     ## ANDAR: idem, para o braço 1 (que passa na frente do corpo)
+@export var back_shoulder_offset := Vector2(72.0, 0.0)      ## desloca o ombro do braço 1 (x positivo = mais para dentro do corpo; unidades do desenho)
+@export_range(0.0, 1.0) var near_arm_peak := 0.90            ## em que ponto do ciclo (0..1) o braço de perto está mais à frente
+@export_range(0.0, 90.0) var elbow_bend_deg := 30.0          ## ANDAR: dobra máxima do cotovelo
+@export_range(0.0, 0.4) var forearm_lag := 0.10              ## atraso do antebraço (fração do ciclo)
+@export_range(1.0, 60.0) var follow_speed := 26.0            ## quão rápido o braço alcança o alvo (maior = menos atraso)
+@export_range(0.25, 4.0) var arm_cycles_per_loop := 1.0      ## oscilações de braço por volta completa dos quadros
+
+@export_group("Prancheta")
+@export_range(0.4, 1.2) var near_arm_scale := 0.72             ## tamanho do braço 2 (o da prancheta); menor = mão mais alta, longe do chão
+@export_range(0.0, 120.0) var clipboard_down_deg := 90.0     ## braço pendurado: prancheta deitada, prendedor para a frente
+@export_range(-30.0, 90.0) var clipboard_up_deg := 17.0      ## braço à frente: prancheta quase em pé
+@export var clipboard_tilt_unused := 0.3                            ## inclinação base em radianos (positivo = topo para fora/frente)
+@export_range(0.0, 1.0) var clipboard_follow := 0.3          ## quanto ela balança junto com o braço (0 = parada)
+
+@export_group("Correr (balanço grande, guardado para quando houver corrida)")
+@export var running := false                                  ## quando verdadeiro, usa o balanço grande abaixo
+@export_range(-90.0, 120.0) var run_arm_up_deg := 45.0
+@export_range(-90.0, 120.0) var run_back_arm_up_deg := 0.0
+@export_range(0.0, 90.0) var run_elbow_bend_deg := 55.0
+
+## Expressões do rosto = COMBINAÇÕES de peças (olho esquerdo, olho direito, nariz, boca) sobre a mesma cabeça-base.
+## Cada nome abaixo usa as peças de mesmo nome; para misturar (ex.: olhos de "furioso" com boca de "fala"),
+## use set_face_parts({olho_e = &"furioso", boca = &"fala"}).
+const EXPRESSIONS: Array[StringName] = [&"normal", &"fala", &"desconfiado", &"bocejo", &"surpreso",
+		&"furioso", &"irritado", &"debochado", &"preocupado", &"animado", &"lendo"]
+const FACE_SLOTS: Array[StringName] = [&"olho_e", &"olho_d", &"nariz", &"boca"]
+const TALK_FPS := 6.0
+
+## Falso durante diálogos/cutscenes: trava o controle.
+var controllable := true
+
+var _expression: StringName = &"normal"
+var _talk_time := 0.0
+var _talk_expression: StringName = &"normal"
+var _walk_blend := 0.0
+var _time := 0.0
+var _theta := {"back": 270.0, "near": 270.0}
+var _bend := {"back": 0.0, "near": 0.0}
+
+@onready var _input: PlayerInput = $PlayerInput
+@onready var _rig: Node2D = $Visual/Rig
+@onready var _body: AnimatedSprite2D = $Visual/Rig/Body
+@onready var _arm := {
+	"back": $Visual/Rig/ArmBack,
+	"near": $Visual/Rig/ArmNear,
+}
+@onready var _face_nodes := {
+	&"olho_e": $Visual/Rig/Face/EyeL,
+	&"olho_d": $Visual/Rig/Face/EyeR,
+	&"nariz": $Visual/Rig/Face/Nose,
+	&"boca": $Visual/Rig/Face/Mouth,
+}
+@onready var _clip: Node2D = $Visual/Rig/Clip
+@onready var _hand_point: Marker2D = $Visual/Rig/ArmNear/Fore/HandPoint
+@onready var _fore := {
+	"back": $Visual/Rig/ArmBack/Fore,
+	"near": $Visual/Rig/ArmNear/Fore,
+}
+
+
+func _physics_process(delta: float) -> void:
+	var dir := _input.read_direction(global_position.x) if controllable else 0.0
+	velocity.x = move_toward(velocity.x, dir * SPEED, ACCELERATION * delta)
+	if not is_on_floor():
+		velocity.y += GRAVITY * delta
+	move_and_slide()
+	if dir != 0.0:
+		_rig.scale.x = -RIG_SCALE if dir < 0.0 else RIG_SCALE
+	var moving := absf(velocity.x) > 30.0
+	var wanted := &"walk" if moving else &"idle"
+	if _body.animation != wanted:
+		_body.play(wanted)
+	_body.speed_scale = clampf(absf(velocity.x) / SPEED, 0.5, 1.0) if moving else 1.0
+
+
+func _ready() -> void:
+	$Visual/Rig/Face/Base.texture = LeoFaceData.BASE
+	$Visual/Rig/Face/Base.position = LeoFaceData.BASE_POS
+	$Visual/Rig/Face/Helmet.texture = LeoFaceData.HELMET
+	$Visual/Rig/Face/Helmet.position = LeoFaceData.HELMET_POS
+	for slot in FACE_SLOTS:
+		(_face_nodes[slot] as Sprite2D).position = LeoFaceData.PART_POS[slot]
+	set_expression(&"normal")
+
+
+## Troca a expressão do rosto inteira. Nomes em EXPRESSIONS; "normal" volta ao rosto de repouso.
+func set_expression(expression: StringName) -> void:
+	if not EXPRESSIONS.has(expression):
+		push_warning("Expressão desconhecida: %s" % expression)
+		return
+	_expression = expression
+	if _talk_time <= 0.0:
+		_apply_face({})
+
+
+## Mistura peças de expressões diferentes, ex.: set_face_parts({boca = &"fala"}). Peças não citadas ficam da expressão atual.
+func set_face_parts(parts: Dictionary) -> void:
+	_apply_face(parts)
+
+
+## Mostra/esconde o capacete.
+func set_helmet(visible_helmet: bool) -> void:
+	$Visual/Rig/Face/Helmet.visible = visible_helmet
+
+
+## Fala por `seconds`: a boca alterna entre a da expressão atual e a de "fala". Use 0 para parar.
+func talk(seconds: float) -> void:
+	_talk_time = seconds
+	if seconds <= 0.0:
+		_apply_face({})
+
+
+func _apply_face(overrides: Dictionary) -> void:
+	for slot in FACE_SLOTS:
+		var pick: StringName = overrides.get(slot, _expression)
+		var table: Dictionary = LeoFaceData.PARTS[slot]
+		(_face_nodes[slot] as Sprite2D).texture = table.get(pick, table[&"normal"])
+
+
+## Só no editor/debug: teclas 1..9 e 0 trocam a expressão (1 = normal), T fala por 3 s.
+func _unhandled_key_input(event: InputEvent) -> void:
+	if not OS.is_debug_build() or not event.is_pressed() or event.is_echo():
+		return
+	var key := event as InputEventKey
+	if key.keycode == KEY_T:
+		talk(3.0)
+	elif key.keycode >= KEY_1 and key.keycode <= KEY_9:
+		set_expression(EXPRESSIONS[key.keycode - KEY_1])
+	elif key.keycode == KEY_0:
+		set_expression(EXPRESSIONS[9])
+	elif key.keycode == KEY_MINUS:
+		set_expression(EXPRESSIONS[10])
+
+
+func _update_face(delta: float) -> void:
+	if _talk_time <= 0.0:
+		return
+	_talk_time -= delta
+	if _talk_time <= 0.0:
+		_apply_face({})
+		return
+	_apply_face({&"boca": &"fala"} if int(_time * TALK_FPS) % 2 == 0 else {})
+
+
+func _process(delta: float) -> void:
+	_time += delta
+	_update_face(delta)
+	_walk_blend = move_toward(_walk_blend, 1.0 if _body.animation == &"walk" else 0.0, delta * 8.0)
+	var phase := _loop_phase()
+	for side in ["back", "near"]:
+		var walk_target := _walk_target(side, phase)
+		var idle_target := _idle_target(side)
+		var target_theta := lerpf(idle_target.x, walk_target.x, _walk_blend)
+		var target_bend := lerpf(idle_target.y, walk_target.y, _walk_blend)
+		var k := 1.0 - exp(-follow_speed * delta)
+		_theta[side] = lerpf(_theta[side], target_theta, k)
+		_bend[side] = lerpf(_bend[side], target_bend, k)
+		var upper: Node2D = _arm[side]
+		upper.position = _pivot(side)
+		upper.rotation = deg_to_rad(270.0 - _theta[side])
+		upper.scale = Vector2.ONE * (near_arm_scale if side == "near" else 1.0)
+		(_fore[side] as Node2D).rotation = -deg_to_rad(_bend[side])
+	_update_clipboard()
+
+
+## A prancheta (sempre de costas) é segurada pela borda de trás, como nos quadros 1, 2, 4 e 10 do desenho:
+## a mão agarra a borda de dentro e a prancheta pende para a frente, quase em pé, inclinada para fora.
+## Ela acompanha só um pouco a rotação do braço (`clipboard_follow`), para balançar com o passo.
+## A prancheta fica NA FRENTE do antebraço e da mão; só os dedos aparecem, curvados sobre a borda de fora
+## (sprite `Fingers`, filho da prancheta), como nos quadros do desenho.
+func _update_clipboard() -> void:
+	var near_upper: Node2D = _arm["near"]
+	var near_fore: Node2D = _fore["near"]
+	_clip.global_position = _hand_point.global_position
+	# 0 = braço pendurado, 1 = braço à frente (ponto mais alto do balanço)
+	var top := 360.0 + (run_arm_up_deg if running else arm_up_deg)
+	var t := clampf((float(_theta["near"]) - arm_down_deg) / maxf(top - arm_down_deg, 1.0), 0.0, 1.0)
+	t = t * t * (3.0 - 2.0 * t)
+	_clip.rotation = lerpf(deg_to_rad(clipboard_down_deg), deg_to_rad(clipboard_up_deg), t)
+
+
+## Fase 0..1 dentro da volta completa dos quadros de andar, contínua (usa o progresso dentro do quadro).
+func _loop_phase() -> float:
+	if _body.animation != &"walk":
+		return 0.0
+	var n := LeoRigData.WALK_ORDER.size()
+	return (float(_body.frame) + _body.frame_progress) / float(n)
+
+
+## Retorna Vector2(ângulo_do_braço_em_graus, dobra_do_cotovelo_em_graus) durante a caminhada.
+func _walk_target(side: String, phase: float) -> Vector2:
+	var p := phase * arm_cycles_per_loop
+	var peak := near_arm_peak if side == "near" else fposmod(near_arm_peak + 0.5, 1.0)
+	var forward := 0.5 + 0.5 * cos(TAU * (p - peak))                 # 1 = braço mais à frente, 0 = pendurado
+	var up := (run_arm_up_deg if running else arm_up_deg) if side == "near" else (run_back_arm_up_deg if running else back_arm_up_deg)
+	var theta := lerpf(arm_down_deg, 360.0 + up, forward)
+	var lagged := 0.5 + 0.5 * cos(TAU * (p - peak - forearm_lag))
+	var bend := (run_elbow_bend_deg if running else elbow_bend_deg) * pow(lagged, 1.3)
+	return Vector2(theta, bend)
+
+
+## Parado: braço pendurado com um balanço mínimo de respiração.
+func _idle_target(side: String) -> Vector2:
+	var sway := sin(_time * 1.9 + (0.0 if side == "near" else 1.3))
+	return Vector2(arm_down_deg + 2.0 * sway, 8.0 + 3.0 * sway)
+
+
+func _pivot(side: String) -> Vector2:
+	var offset := back_shoulder_offset if side == "back" else Vector2.ZERO
+	if _body.animation == &"walk":
+		var arr: Array[Vector2] = LeoRigData.PIVOT_BACK if side == "back" else LeoRigData.PIVOT_NEAR
+		return arr[clampi(_body.frame, 0, arr.size() - 1)] + offset
+	return (LeoRigData.IDLE_PIVOT_BACK if side == "back" else LeoRigData.IDLE_PIVOT_NEAR) + offset

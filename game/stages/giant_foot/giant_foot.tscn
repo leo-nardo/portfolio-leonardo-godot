@@ -1,0 +1,146 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://game/stages/giant_foot/giant_foot.gd" id="1_stage"]
+[ext_resource type="PackedScene" path="res://game/actors/player/player.tscn" id="2_player"]
+[ext_resource type="Texture2D" path="res://game/art/backgrounds/forest/bg_sky.svg" id="3_sky"]
+[ext_resource type="Texture2D" path="res://game/art/backgrounds/forest/bg_far_trees.svg" id="4_far"]
+[ext_resource type="Texture2D" path="res://game/art/backgrounds/forest/bg_mid_trees.svg" id="5_mid"]
+[ext_resource type="Texture2D" path="res://game/art/backgrounds/forest/bg_ground.svg" id="6_ground"]
+[ext_resource type="Texture2D" path="res://game/art/giant/giant_shoe.svg" id="7_shoe"]
+[ext_resource type="Texture2D" path="res://game/art/giant/door_frame.svg" id="8_frame"]
+[ext_resource type="Texture2D" path="res://game/art/giant/door_interior.svg" id="9_int"]
+[ext_resource type="Texture2D" path="res://game/art/giant/door_panel_l.svg" id="10_pl"]
+[ext_resource type="Texture2D" path="res://game/art/giant/door_panel_r.svg" id="11_pr"]
+[ext_resource type="Texture2D" path="res://game/art/characters/leo_v3/parado.png" id="12_front"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
+size = Vector2(9000, 200)
+
+[node name="GiantFoot" type="Node2D"]
+script = ExtResource("1_stage")
+stage_id = &"giant_foot"
+stage_width = 3200.0
+
+[node name="Sky" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.05, 1)
+
+[node name="Sprite" type="Sprite2D" parent="Sky"]
+texture = ExtResource("3_sky")
+centered = false
+
+[node name="FarTrees" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.3, 1)
+
+[node name="Sprite" type="Sprite2D" parent="FarTrees"]
+texture = ExtResource("4_far")
+centered = false
+
+[node name="MidTrees" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.6, 1)
+
+[node name="Sprite" type="Sprite2D" parent="MidTrees"]
+texture = ExtResource("5_mid")
+centered = false
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(2000, 1050)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+shape = SubResource("RectangleShape2D_ground")
+
+[node name="GroundArt" type="Sprite2D" parent="."]
+position = Vector2(0, 800)
+texture = ExtResource("6_ground")
+centered = false
+
+[node name="GroundArt2" type="Sprite2D" parent="."]
+position = Vector2(4000, 800)
+texture = ExtResource("6_ground")
+centered = false
+
+[node name="Shoe" type="Sprite2D" parent="."]
+position = Vector2(1900, -80)
+texture = ExtResource("7_shoe")
+centered = false
+
+[node name="Door" type="Node2D" parent="."]
+
+[node name="Frame" type="Sprite2D" parent="Door"]
+position = Vector2(2730, 414)
+texture = ExtResource("8_frame")
+centered = false
+
+[node name="Interior" type="Sprite2D" parent="Door"]
+position = Vector2(2760, 490)
+texture = ExtResource("9_int")
+centered = false
+
+[node name="Waiting" type="Sprite2D" parent="Door"]
+visible = false
+z_index = 1
+position = Vector2(2900, 930)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_front")
+offset = Vector2(0, -515)
+
+[node name="PanelL" type="Sprite2D" parent="Door"]
+z_index = 3
+position = Vector2(2760, 490)
+texture = ExtResource("10_pl")
+centered = false
+
+[node name="PanelR" type="Sprite2D" parent="Door"]
+z_index = 3
+position = Vector2(2900, 490)
+texture = ExtResource("11_pr")
+centered = false
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+z_index = 4
+position = Vector2(300, 950)
+
+[node name="Hud" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Prompt" type="Label" parent="Hud"]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -90.0
+offset_right = 240.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 34
+text = "Clique no elevador"
+horizontal_alignment = 1
+
+[node name="Fade" type="ColorRect" parent="Hud"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="EndLabel" type="Label" parent="Hud"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -40.0
+offset_right = 400.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 44
+text = "Cena 1 concluída — o elevador sobe..."
+horizontal_alignment = 1

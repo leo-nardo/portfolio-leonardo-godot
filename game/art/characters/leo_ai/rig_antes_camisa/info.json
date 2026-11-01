@@ -1,0 +1,32 @@
+{
+ "tras": {
+  "ombro": [
+   42.0,
+   10.0
+  ],
+  "cotovelo_em_cima": [
+   25.5,
+   125.0
+  ],
+  "cotovelo_em_baixo": [
+   25.5,
+   10.0
+  ],
+  "comprimento": 177.7813057423128
+ },
+ "perto": {
+  "ombro": [
+   38.0,
+   10.0
+  ],
+  "cotovelo_em_cima": [
+   28.0,
+   121.0
+  ],
+  "cotovelo_em_baixo": [
+   28.0,
+   10.0
+  ],
+  "comprimento": 170.64492575531187
+ }
+}

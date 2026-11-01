@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://game/stages/stage_base.gd" id="1_stage"]
+[ext_resource type="PackedScene" path="res://game/actors/player/player.tscn" id="2_player"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
+size = Vector2(4000, 200)
+
+[node name="DebugStage" type="Node2D"]
+script = ExtResource("1_stage")
+stage_id = &"debug_stage"
+
+[node name="Sky" type="Polygon2D" parent="."]
+z_index = -100
+color = Color(0.72, 0.88, 0.62, 1)
+polygon = PackedVector2Array(0, 0, 4000, 0, 4000, 1080, 0, 1080)
+
+[node name="FarHills" type="Parallax2D" parent="."]
+z_index = -50
+scroll_scale = Vector2(0.4, 1)
+
+[node name="Hill1" type="Polygon2D" parent="FarHills"]
+color = Color(0.45, 0.65, 0.4, 1)
+polygon = PackedVector2Array(0, 880, 400, 500, 900, 880)
+
+[node name="Hill2" type="Polygon2D" parent="FarHills"]
+color = Color(0.4, 0.6, 0.36, 1)
+polygon = PackedVector2Array(800, 880, 1400, 420, 2100, 880)
+
+[node name="Hill3" type="Polygon2D" parent="FarHills"]
+color = Color(0.45, 0.65, 0.4, 1)
+polygon = PackedVector2Array(1900, 880, 2500, 480, 3100, 880)
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(2000, 980)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+shape = SubResource("RectangleShape2D_ground")
+
+[node name="Grass" type="Polygon2D" parent="Ground"]
+color = Color(0.3, 0.55, 0.25, 1)
+polygon = PackedVector2Array(-2000, -100, 2000, -100, 2000, 100, -2000, 100)
+
+[node name="Marker1" type="Polygon2D" parent="."]
+color = Color(0.85, 0.35, 0.2, 1)
+polygon = PackedVector2Array(1000, 880, 1000, 780, 1060, 780, 1060, 880)
+
+[node name="Marker2" type="Polygon2D" parent="."]
+color = Color(0.2, 0.45, 0.85, 1)
+polygon = PackedVector2Array(2400, 880, 2400, 780, 2460, 780, 2460, 880)
+
+[node name="Marker3" type="Polygon2D" parent="."]
+color = Color(0.9, 0.75, 0.2, 1)
+polygon = PackedVector2Array(3500, 880, 3500, 780, 3560, 780, 3560, 880)
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(300, 880)

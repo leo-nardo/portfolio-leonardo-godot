@@ -1,0 +1,402 @@
+{
+ "caixas": {
+  "olho_e": [
+   300,
+   150,
+   448,
+   292
+  ],
+  "olho_d": [
+   440,
+   130,
+   592,
+   292
+  ],
+  "nariz": [
+   396,
+   222,
+   545,
+   296
+  ],
+  "boca": [
+   385,
+   278,
+   542,
+   368
+  ]
+ },
+ "pecas": {
+  "caixas": {
+   "olho_e": [
+    300,
+    150,
+    448,
+    292
+   ],
+   "olho_d": [
+    440,
+    130,
+    592,
+    292
+   ],
+   "nariz": [
+    396,
+    222,
+    545,
+    296
+   ],
+   "boca": [
+    385,
+    278,
+    542,
+    368
+   ]
+  },
+  "pecas": {
+   "caixas": {
+    "olho_e": [
+     300,
+     150,
+     448,
+     292
+    ],
+    "olho_d": [
+     440,
+     130,
+     592,
+     292
+    ],
+    "nariz": [
+     396,
+     222,
+     545,
+     296
+    ],
+    "boca": [
+     385,
+     278,
+     542,
+     368
+    ]
+   },
+   "pecas": {
+    "caixas": {
+     "olho_e": [
+      300,
+      150,
+      448,
+      292
+     ],
+     "olho_d": [
+      440,
+      130,
+      592,
+      292
+     ],
+     "nariz": [
+      396,
+      222,
+      545,
+      296
+     ],
+     "boca": [
+      385,
+      278,
+      542,
+      368
+     ]
+    },
+    "pecas": {
+     "caixas": {
+      "olho_e": [
+       310,
+       160,
+       432,
+       286
+      ],
+      "olho_d": [
+       462,
+       140,
+       585,
+       286
+      ],
+      "nariz": [
+       418,
+       228,
+       522,
+       284
+      ],
+      "boca": [
+       388,
+       284,
+       535,
+       368
+      ]
+     },
+     "pecas": {
+      "caixas": {
+       "olho_e": [
+        310,
+        160,
+        432,
+        286
+       ],
+       "olho_d": [
+        462,
+        140,
+        585,
+        286
+       ],
+       "nariz": [
+        418,
+        228,
+        522,
+        284
+       ],
+       "boca": [
+        388,
+        284,
+        535,
+        368
+       ]
+      },
+      "pecas": {
+       "olho_e": [
+        "desconfiado"
+       ],
+       "olho_d": [
+        "desconfiado"
+       ],
+       "nariz": [
+        "desconfiado"
+       ],
+       "boca": [
+        "desconfiado"
+       ]
+      },
+      "olho_e": [
+       "desconfiado"
+      ],
+      "olho_d": [
+       "desconfiado"
+      ],
+      "nariz": [
+       "desconfiado"
+      ],
+      "boca": [
+       "desconfiado"
+      ]
+     },
+     "olho_e": [
+      "animado",
+      "bocejo",
+      "debochado",
+      "desconfiado",
+      "fala",
+      "furioso",
+      "irritado",
+      "lendo",
+      "normal",
+      "preocupado",
+      "surpreso"
+     ],
+     "olho_d": [
+      "animado",
+      "bocejo",
+      "debochado",
+      "desconfiado",
+      "fala",
+      "furioso",
+      "irritado",
+      "lendo",
+      "normal",
+      "preocupado",
+      "surpreso"
+     ],
+     "nariz": [
+      "animado",
+      "bocejo",
+      "debochado",
+      "desconfiado",
+      "fala",
+      "furioso",
+      "irritado",
+      "lendo",
+      "normal",
+      "preocupado",
+      "surpreso"
+     ],
+     "boca": [
+      "animado",
+      "bocejo",
+      "debochado",
+      "desconfiado",
+      "fala",
+      "furioso",
+      "irritado",
+      "lendo",
+      "normal",
+      "preocupado",
+      "surpreso"
+     ]
+    },
+    "olho_e": [
+     "animado",
+     "bocejo",
+     "debochado",
+     "desconfiado",
+     "fala",
+     "furioso",
+     "irritado",
+     "lendo",
+     "normal",
+     "preocupado",
+     "surpreso"
+    ],
+    "olho_d": [
+     "animado",
+     "bocejo",
+     "debochado",
+     "desconfiado",
+     "fala",
+     "furioso",
+     "irritado",
+     "lendo",
+     "normal",
+     "preocupado",
+     "surpreso"
+    ],
+    "nariz": [
+     "animado",
+     "bocejo",
+     "debochado",
+     "desconfiado",
+     "fala",
+     "furioso",
+     "irritado",
+     "lendo",
+     "normal",
+     "preocupado",
+     "surpreso"
+    ],
+    "boca": [
+     "animado",
+     "bocejo",
+     "debochado",
+     "desconfiado",
+     "fala",
+     "furioso",
+     "irritado",
+     "lendo",
+     "normal",
+     "preocupado",
+     "surpreso"
+    ]
+   },
+   "olho_e": [
+    "animado",
+    "bocejo",
+    "debochado",
+    "desconfiado",
+    "fala",
+    "furioso",
+    "irritado",
+    "lendo",
+    "normal",
+    "preocupado",
+    "surpreso"
+   ],
+   "olho_d": [
+    "animado",
+    "bocejo",
+    "debochado",
+    "desconfiado",
+    "fala",
+    "furioso",
+    "irritado",
+    "lendo",
+    "normal",
+    "preocupado",
+    "surpreso"
+   ],
+   "nariz": [
+    "animado",
+    "bocejo",
+    "debochado",
+    "desconfiado",
+    "fala",
+    "furioso",
+    "irritado",
+    "lendo",
+    "normal",
+    "preocupado",
+    "surpreso"
+   ],
+   "boca": [
+    "animado",
+    "bocejo",
+    "debochado",
+    "desconfiado",
+    "fala",
+    "furioso",
+    "irritado",
+    "lendo",
+    "normal",
+    "preocupado",
+    "surpreso"
+   ]
+  },
+  "olho_e": [
+   "animado",
+   "bocejo",
+   "debochado",
+   "desconfiado",
+   "fala",
+   "furioso",
+   "irritado",
+   "lendo",
+   "normal",
+   "preocupado",
+   "surpreso"
+  ],
+  "olho_d": [
+   "animado",
+   "bocejo",
+   "debochado",
+   "desconfiado",
+   "fala",
+   "furioso",
+   "irritado",
+   "lendo",
+   "normal",
+   "preocupado",
+   "surpreso"
+  ],
+  "nariz": [
+   "animado",
+   "bocejo",
+   "debochado",
+   "desconfiado",
+   "fala",
+   "furioso",
+   "irritado",
+   "lendo",
+   "normal",
+   "preocupado",
+   "surpreso"
+  ],
+  "boca": [
+   "animado",
+   "bocejo",
+   "debochado",
+   "desconfiado",
+   "fala",
+   "furioso",
+   "irritado",
+   "lendo",
+   "normal",
+   "preocupado",
+   "surpreso"
+  ]
+ }
+}

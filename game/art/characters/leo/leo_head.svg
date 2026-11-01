@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+  <title>Untitled-1</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="orelha" d="M174 214 C166 236 174 262 192 266 C212 266 218 240 210 218 C204 200 182 198 174 214 Z" fill="#f6b98e"/>
+    <path d="M174 214 C166 236 174 262 192 266 C212 266 218 240 210 218 C204 200 182 198 174 214 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="orelha-2" data-name="orelha" d="M402 214 C394 236 402 262 420 266 C440 266 446 240 438 218 C432 200 410 198 402 214 Z" fill="#f6b98e"/>
+    <path d="M402 214 C394 236 402 262 420 266 C440 266 446 240 438 218 C432 200 410 198 402 214 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="rosto" d="M306 112 C382 106 428 158 426 220 C424 276 380 322 306 326 C232 322 188 276 186 220 C184 158 230 106 306 112 Z" fill="#f6b98e"/>
+    <path id="sombra_rosto" d="M426 220 C424 276 380 322 306 326 C346 308 394 268 394 216 C394 190 386 168 372 148 C410 160 428 190 426 220 Z" fill="#e29a72"/>
+    <path id="blush" d="M234 262 C244 252 262 252 270 262 C262 274 244 276 234 262 Z" fill="#ee8b80" opacity="0.55"/>
+    <path id="blush-2" data-name="blush" d="M346 262 C356 252 374 252 382 262 C374 274 356 276 346 262 Z" fill="#ee8b80" opacity="0.55"/>
+    <path id="contorno_rosto" d="M306 112 C382 106 428 158 426 220 C424 276 380 322 306 326 C232 322 188 276 186 220 C184 158 230 106 306 112 Z" fill="none" stroke="#1c1417" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="olho" d="M240 205 C240 175 296 175 296 205 C296 242 240 242 240 205 Z" fill="#ffffff"/>
+    <path id="pupila" d="M262 210 C262 190 290 190 290 210 C290 232 262 232 262 210 Z" fill="#1c1417"/>
+    <path id="brilho" d="M274 202 C274 195 285 195 285 202 C285 209 274 209 274 202 Z" fill="#ffffff"/>
+    <path d="M240 205 C240 175 296 175 296 205 C296 242 240 242 240 205 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="olho-2" data-name="olho" d="M318 205 C318 175 374 175 374 205 C374 242 318 242 318 205 Z" fill="#ffffff"/>
+    <path id="pupila-2" data-name="pupila" d="M340 210 C340 190 368 190 368 210 C368 232 340 232 340 210 Z" fill="#1c1417"/>
+    <path id="brilho-2" data-name="brilho" d="M352 202 C352 195 363 195 363 202 C363 209 352 209 352 202 Z" fill="#ffffff"/>
+    <path d="M318 205 C318 175 374 175 374 205 C374 242 318 242 318 205 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M238 168 C258 152 288 154 302 168" fill="none" stroke="#2b2233" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M318 156 C340 134 374 138 388 156" fill="none" stroke="#2b2233" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="nariz" d="M296 236 C296 222 326 222 328 240 C330 256 300 262 294 250 Z" fill="#eba07a"/>
+    <path d="M296 236 C296 222 326 222 328 240 C330 256 300 262 294 250 Z" fill="none" stroke="#1c1417" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="boca" d="M248 272 C272 332 342 334 366 272 C338 286 276 286 248 272 Z" fill="#6a1f2b"/>
+    <path id="lingua" d="M280 306 C296 290 322 290 336 306 C322 322 296 322 280 306 Z" fill="#e2606c"/>
+    <path id="dentes" d="M256 276 C284 290 332 290 360 276 L355 292 C330 302 286 302 262 292 Z" fill="#ffffff"/>
+    <path d="M248 272 C272 332 342 334 366 272 C338 286 276 286 248 272 Z" fill="none" stroke="#1c1417" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M282 289 L281 299 M306 292 L306 303 M330 289 L331 299" fill="none" stroke="#1c1417" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cavanhaque" d="M280 330 C294 352 320 352 334 330 C320 338 294 338 280 330 Z" fill="#2b2233"/>
+    <path d="M280 330 C294 352 320 352 334 330 C320 338 294 338 280 330 Z" fill="none" stroke="#1c1417" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cabelo" d="M180 218 C160 130 206 72 266 64 C282 36 332 30 354 58 C410 50 454 108 432 218 C424 172 402 148 372 154 C346 130 276 130 250 154 C214 154 190 176 180 218 Z" fill="#2b2233"/>
+    <path id="brilho_cabelo" d="M222 112 C238 86 276 74 304 76 C272 86 252 104 242 130 Z" fill="#4d4478"/>
+    <path id="sombra_cabelo" d="M392 100 C414 120 426 160 424 196 C410 170 398 154 380 148 C392 134 396 116 392 100 Z" fill="#1a1422"/>
+    <path id="contorno_cabelo" d="M180 218 C160 130 206 72 266 64 C282 36 332 30 354 58 C410 50 454 108 432 218 C424 172 402 148 372 154 C346 130 276 130 250 154 C214 154 190 176 180 218 Z" fill="none" stroke="#1c1417" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="topete" d="M298 66 C286 30 326 12 352 34 C338 38 330 54 338 66 Z" fill="#2b2233"/>
+    <path d="M298 66 C286 30 326 12 352 34 C338 38 330 54 338 66" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

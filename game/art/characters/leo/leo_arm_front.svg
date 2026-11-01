@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+  <title>Untitled-1</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="manga_ol" d="M380 376 C400 420 404 474 392 522" fill="none" stroke="#1c1417" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="manga" d="M380 376 C400 420 404 474 392 522" fill="none" stroke="#5b86a8" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sombra_manga" d="M380 376 C388 396 394 420 396 440 C386 420 380 400 374 384 Z" fill="#456a8a" opacity="0"/>
+    <path id="punho_ol" d="M392 526 L391 540" fill="none" stroke="#1c1417" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="punho" d="M392 526 L391 540" fill="none" stroke="#fffbea" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mao" d="M412 562 C422 590 414 616 390 620 C364 622 354 596 364 570 C366 556 376 546 388 546 C400 546 408 552 412 562 Z" fill="#f6b98e"/>
+    <path id="polegar" d="M366 574 C346 574 338 596 354 602 C360 592 364 584 366 574 Z" fill="#f6b98e"/>
+    <path d="M412 562 C422 590 414 616 390 620 C364 622 354 596 364 570 C366 556 376 546 388 546 C400 546 408 552 412 562 Z" fill="none" stroke="#1c1417" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M366 574 C346 574 338 596 354 602 C360 592 364 584 366 574 Z" fill="none" stroke="#1c1417" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M394 604 L396 618 M378 606 L376 620" fill="none" stroke="#1c1417" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
